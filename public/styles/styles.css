@@ -1,0 +1,123 @@
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    gap: 10px;
+    padding: 10px;
+}
+
+section {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.tools-board {
+    width: 210px;
+    padding: 15px 22px 0;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls .options {
+    list-style: none;
+    margin: 10px 0 0 5px;
+    padding: 0;
+}
+
+.controls .options .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option {
+    color: #5A6168;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.option:is(:hover, .active) {
+    color: #4A98F7;
+}
+
+#brush-size {
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background: #4A98F7;
+}
+
+.buttons button {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-btn {
+    color: #6C757D;
+    border: 1px solid #6C757D;
+    transition: all 0.3s ease;
+}
+
+#clear-btn:hover {
+    color: #fff;
+    background: #6C757D;
+}
+
+#save-btn, #recognize {
+    color: #4A98F7;
+    border: 1px solid #4A98F7;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recognize {
+    background-image: linear-gradient(to right, #87CEEB, #34C759);
+    color: white;
+    border: none;
+    transition: background-position 0.4s linear;
+    background-size: 200% 100%;
+    background-position: left center;
+}
+
+#recognize:hover {
+    background-position: right center;
+}
+
+.drawing-board {
+    flex: 1;
+}
+
+.drawing-board canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#text-input {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+}
