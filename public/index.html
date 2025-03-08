@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drawing Board</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <section class="tools-board">
+                <div class="controls">
+                    <label class="title">Controls</label>
+                    <ul class="options">
+                        <li class="option active tool" id="brush">Brush</li>
+                        <li class="option tool" id="eraser">Eraser</li>
+                        <li class="option tool" id="text">Text</li>
+                    </ul>
+                    <label for="brush-size">Brush Size</label>
+                    <input type="range" id="brush-size" min="1" max="20" value="5">
+                    <label class="title">Colour</label>
+                    <input type="color" id="color-picker" value="#000000">
+                </div>
+                <div class="controls buttons">
+                    <button id="recognize">Recognize</button>
+                    <button id="clear-btn">Clear</button>
+                    <button id="save-btn">Save As Image</button>
+                </div>
+            </section>
+            
+            <section class="drawing-board">
+                <input type="text" id="text-input">
+                <canvas></canvas>
+            </section>
+        </div>
+    </body>
+</html>
